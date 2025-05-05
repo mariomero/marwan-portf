@@ -3,103 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marwan Mohamed Saeed | Portfolio</title>
+  <title>Marwan Mohamed | Brand Designer</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
       color: #ffffff;
+      overflow-x: hidden;
     }
-
-    header {
-      display: flex;
-      align-items: center;
+    header, section {
       padding: 4rem 2rem;
+      text-align: center;
+    }
+    header {
       background: linear-gradient(to right, #0d0d0d, #004d4d);
+      animation: fadeIn 2s ease-in;
     }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .profile-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-right: 2rem;
-      border: 2px solid #00cccc;
-    }
-
     h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
-
-    p {
-      margin: 0.5rem 0 0 0;
-    }
-
-    section {
-      padding: 2rem;
-    }
-
-    .section-title {
+      font-size: 2.5rem;
       color: #00cccc;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
     }
-
-    .project-list li {
-      margin-bottom: 0.5rem;
+    h2 {
+      color: #00cccc;
     }
-
-    .contact {
-      margin-top: 2rem;
-      color: #ffffff;
+    .project, .skill {
+      margin: 1.5rem 0;
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00cccc22;
+      transition: transform 0.3s ease;
+    }
+    .project:hover, .skill:hover {
+      transform: translateY(-5px);
+    }
+    a {
+      color: #00cccc;
+      text-decoration: none;
+    }
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background-color: #000;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <img src="7p.jpg" alt="Marwan Mohamed" class="profile-image" />
-      <div>
-        <h1>Marwan Mohamed Saeed</h1>
-        <p>Brand designer and visual identity specialist</p>
-      </div>
-    </div>
+    <h1>Marwan Mohamed</h1>
+    <p>Brand Designer & Visual Identity Expert</p>
   </header>
 
   <section>
-    <h2 class="section-title">About Me</h2>
+    <h2>About Me</h2>
     <p>I'm a multi-passionate creative who wants to upgrade your brand with my skills.</p>
   </section>
 
   <section>
-    <h2 class="section-title">Projects</h2>
-    <ul class="project-list">
-      <li>Master Fragrances brand</li>
-      <li>Callista candles brand</li>
-      <li>Loyal personal brand</li>
-    </ul>
+    <h2>Projects</h2>
+    <div class="project">Master Fragrances brand</div>
+    <div class="project">Callista candles brand</div>
+    <div class="project">Loyal personal brand</div>
   </section>
 
   <section>
-    <h2 class="section-title">Skills</h2>
-    <ul>
-      <li>Graphic Design</li>
-      <li>UX/UI</li>
-      <li>Drawing</li>
-      <li>Photography</li>
-    </ul>
+    <h2>Skills</h2>
+    <div class="skill">Graphic Design</div>
+    <div class="skill">UX/UI</div>
+    <div class="skill">Drawing</div>
+    <div class="skill">Photography</div>
   </section>
 
-  <section class="contact">
-    <h2 class="section-title">Contact</h2>
+  <section>
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:kkmmmmkk567@gmail.com">kkmmmmkk567@gmail.com</a></p>
   </section>
+
+  <footer>
+    &copy; 2025 Marwan Mohamed. All rights reserved.
+  </footer>
 </body>
 </html>
